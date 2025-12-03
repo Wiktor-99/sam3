@@ -122,10 +122,6 @@ class Sam3VideoPredictor:
             "session_id": session_id,
             "start_time": time.time(),
         }
-        logger.debug(
-            f"started new session {session_id}; {self._get_session_stats()}; "
-            f"{self._get_torch_and_gpu_properties()}"
-        )
         return {"session_id": session_id}
 
     def add_prompt(
